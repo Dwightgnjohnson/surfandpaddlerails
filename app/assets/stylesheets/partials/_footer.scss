@@ -1,0 +1,83 @@
+footer.mainfooter {
+  display: block;
+  margin-top:5px;
+
+  header h1  {
+    font-weight:normal;
+    text-transform: uppercase;
+    text-align:center;
+    font-size:65px;
+    font-weight:400;
+    padding:4px;
+    color:#06324d;
+  }
+  section.footer4imageslink {
+    margin-top:30px;
+    a.tint325x332 {
+      position: relative;
+      cursor: pointer;
+      width:325px;height:332px;
+      padding:0;margin:0;
+      float:left;
+      transition: all 0.5s ease;
+      }
+      a.tint325x332:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(20,118,190, 0.5);
+      -moz-transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      }
+      a.tint325x332:hover:before {
+        background: none;
+      }
+      img {
+        width:325px;height:332px;
+      }
+  }
+  div.footeroffooter {
+    display:block;
+    font-weight:700;
+    width:100%;
+    background:#083352;
+    section.brandcopyright {
+      width:60%;
+      float:left;
+      background:#083352;
+      height:90px;
+      img.ironyardlogo {
+        margin:10px 0 0 151px;
+        float:left;
+      }
+      small.copyright {
+        float:left;
+        font-size:12.5px;
+        margin: 37px 0 0 5px;
+        color:#a1bcd1;
+      }
+    }
+    nav.footernav {
+      background:#083352;
+      width:40%;
+      float:left;
+      padding:32px;
+      height:90px;
+      ul li {
+        display:inline;
+        color:#a1bcd1;
+        a {
+          font-size:13px;
+          color:#a1bcd1;
+        }
+      }
+    }
+  }
+}
