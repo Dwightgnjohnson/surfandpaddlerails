@@ -1,6 +1,4 @@
 class BlogController < ApplicationController
-
-  def home
+  def index
   end
-
 end
