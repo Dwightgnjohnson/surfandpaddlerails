@@ -1,24 +1,44 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<main id="maincontent">
+  <article class="mainarticle">
+    <h1><%= @article.title %></h1>
 
-<p>
-  <strong>Author:</strong>
-  <%= @article.author %>
-</p>
+    <div class="byline">
+      <address class="author">
+        <a rel="author" href="#">
+          <div class="tint"><%= image_tag 'profileimage.jpeg' %></div> <span class="name"><%= @article.author %></span></a>
+      </address>
+      <div class="date">
+            on <time><%= @article.date.strftime("%A %b. %eth %l:%M %p") %></time></div>
+    </div><!-- End of byline -->
+    <section class="articlecontent">
+        <%= @article.content %>
+    </section>
 
-<p>
-  <strong>Date:</strong>
-  <%= @article.date %>
-</p>
+    <section class="commentsshare">
+        <ul class="readcomments">
+          <li><%= image_tag 'comments.png' %></li>
+          <li><p>Read Comments</p></li>
+        </ul>
 
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
+          <ul class="readlater">
+            <li><%= image_tag 'later.png' %></li>
+            <li><p>Read Later</p></li>
+          </ul>
+
+          <ul class="sharelater">
+            <li><%= image_tag 'share.png' %></li>
+            <li><p>Share This Post</p></li>
+          </ul>
+    </section>
+</article>
+
+<%= render 'aside' %>
+
+</main>
+
+
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
