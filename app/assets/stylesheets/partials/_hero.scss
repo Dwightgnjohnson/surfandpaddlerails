@@ -23,7 +23,13 @@ background: -webkit-radial-gradient(top center, ellipse cover, rgba(20,118,190, 
         font-weight:bold;
         font-size:1em;
         line-spacing:0;
+        a {
+          color:$surf-logo;
         }
+        a:hover {
+          color:lighten( $surf-logo, 10% )
+        }
+      }
     }
     section nav {
       @include span-columns(6);
@@ -39,6 +45,12 @@ background: -webkit-radial-gradient(top center, ellipse cover, rgba(20,118,190, 
         padding-left:0px;
         font-family: 'Oswald';
         font-weight: 700;
+        a {
+          color:$surf-logo;
+        }
+        a:hover {
+          color:lighten( $surf-logo, 10% )
+        }
       }
       ul li:nth-child(1) {
         margin-right:10px;

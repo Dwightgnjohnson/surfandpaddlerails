@@ -8,16 +8,17 @@
 </section>
 <div class="footeroffooter">
   <section class="brandcopyright">
-    <%= image_tag 'theironyard.png', :class => 'ironyardlogo' %>
+    <%= link_to image_tag('theironyard.png'), 'http://theironyard.com', :class => 'ironyardlogo' %>
 
     <small class="copyright">The Ironyard Copyright 2013. All Rights Reserved</small>
   </section>
   <nav class="footernav">
     <ul>
-      <li><a href="#">Nav Item 1</a>&nbsp;|</li>
-      <li><a href="#">Nav Item 2</a>&nbsp;|</li>
-      <li><a href="#">Nav Item 3</a>&nbsp;|</li>
-      <li><a href="#">Nav Item 5</a></li>
+
+      <li><%= link_to 'Nav Item 1', '#' %>&nbsp;|</li>
+      <li><%= link_to 'Nav Item 2', '#' %>&nbsp;|</li>
+      <li><%= link_to 'Nav Item 3', '#' %>&nbsp;|</li>
+      <li><%= link_to 'Nav Item 5', '#' %></li>
     </ul>
   </nav>
 </div>

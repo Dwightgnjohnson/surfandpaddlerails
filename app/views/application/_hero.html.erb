@@ -2,12 +2,12 @@
 	<div class="hero">
 		<div class="hero-inner">
 			<section>
-				<header><p><%= image_tag 'logo.png' %></p><p class = "blog">Surf & Paddle Co. Blog</p></header>
+				<header><p><%= link_to image_tag('logo.png'), '/' %></p><p class = "blog"><%= link_to 'Surf & Paddle Co. Blog', '/' %></p></header>
 				<nav>
 					<ul>
-						<li>about</li>
-						<li>search</li>
-						<li><%= image_tag 'search.png' %></li>
+						<li><%= link_to 'about', '/' %></li>
+						<li><%= link_to 'search', '/' %></li>
+						<li><%= link_to image_tag('search.png'), '/' %></li>
 					</ul>
 				</nav>
 			</section>
