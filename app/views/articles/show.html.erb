@@ -7,7 +7,7 @@
     <div class="byline">
       <address class="author">
         <a rel="author" href="#">
-          <div class="tint"><%= image_tag 'profileimage.jpeg' %></div> <span class="name"><%= @article.author %></span></a>
+          <div class="tint"><%= image_tag 'profileimage.jpeg' %></div> <span class="name"><%= @article.author.name %></span></a>
       </address>
       <div class="date">
             on <time><%= @article.date.strftime("%A %b. %eth %l:%M %p") %></time></div>

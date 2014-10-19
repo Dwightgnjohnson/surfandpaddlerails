@@ -6,4 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Article.create(title: 'SeedTitle', author: 'seed author', date: 1.day.ago, content: 'seed content alala lal alala' )
+joe = Author.create name: "Joe"
+# chocorock = Product.create name: "chocorock", price: 3
+
+Article.create title: 'SeedTitle', author: joe, date: 1.day.ago, content: 'seed content alala lal alala' 
+# Transaction.create product: dumbdumb, posted: i.days.ago, amount: 5*dumbdumb.price
