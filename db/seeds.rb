@@ -1,13 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Author.destroy_all
+Article.destroy_all
 
-joe = Author.create name: "Joe"
-# chocorock = Product.create name: "chocorock", price: 3
+joe = Author.create name: "Joe Smith"
+anna = Author.create name: "Anna Small"
+billy = Author.create name: "Billy Hall"
 
-Article.create title: 'SeedTitle', author: joe, date: 1.day.ago, content: 'seed content alala lal alala' 
-# Transaction.create product: dumbdumb, posted: i.days.ago, amount: 5*dumbdumb.price
+names = [joe, anna, billy]
+
+5.times.each do |x|
+  Article.create title: Faker::Hacker.say_something_smart, author: names.sample, date: Faker::Time.between(7.days.ago, Time.now, :day), content: Faker::Lorem.paragraph(sentence_count=20)
+end

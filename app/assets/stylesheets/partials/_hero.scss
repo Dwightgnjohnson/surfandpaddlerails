@@ -1,8 +1,7 @@
-  // background: linear-gradient(rgba(20,118,190, 0.6),rgba(22,84,143, 0.6)), url(image-url("herowaves1300x524.jpg")) center center no-repeat;
 .hero {
   width:1300px;height:524px;
-  //background:image-url("herowaves1300x524.jpg") center center no-repeat;
-  background: url(/assets/herowaves1300x524.jpg) center center no-repeat;
+background: -webkit-radial-gradient(top center, ellipse cover, rgba(20,118,190, 1) 0%,rgba(21,112,182, 0.5) 90%), image-url("herowaves1300x524.jpg");
+
   .hero-inner {
     @include clearfix;
     text-transform: uppercase;
